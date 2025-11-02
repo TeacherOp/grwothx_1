@@ -1,0 +1,207 @@
+Discipline,Megaskill,Microskill,Levels
+Artificial Intelligence & Data Science,Data Exploration and Inference,Exploratory Data Analysis (EDA),1 - 7
+Artificial Intelligence & Data Science,Data Exploration and Inference,Inferential Statistics,1 - 7
+Artificial Intelligence & Data Science,Data Exploration and Inference,Data Visualization for Inference,1 - 7
+Artificial Intelligence & Data Science,Natural Language Processing,Text Preprocessing,1 - 7
+Artificial Intelligence & Data Science,Natural Language Processing,Language Modeling,1 - 7
+Artificial Intelligence & Data Science,Natural Language Processing,Sentiment Analysis,1 - 7
+Artificial Intelligence & Data Science,Supervised Machine Learning,Model Development,1 - 7
+Artificial Intelligence & Data Science,Supervised Machine Learning,Hyperparameter Tuning,1 - 7
+Artificial Intelligence & Data Science,Supervised Machine Learning,Performance Evaluation,1 - 7
+Artificial Intelligence & Data Science,Unsupervised Machine Learning,Clustering Algorithms,1 - 7
+Artificial Intelligence & Data Science,Unsupervised Machine Learning,Dimensionality Reduction,1 - 7
+Artificial Intelligence & Data Science,Unsupervised Machine Learning,Anomaly Detection,1 - 7
+Artificial Intelligence & Data Science,Computer Vision,Image Preprocessing,1 - 7
+Artificial Intelligence & Data Science,Computer Vision,Object Detection,1 - 7
+Artificial Intelligence & Data Science,Computer Vision,Image Segmentation,1 - 7
+Artificial Intelligence & Data Science,Data Visualization and Storytelling,Visualization Design Principles,1 - 7
+Artificial Intelligence & Data Science,Data Visualization and Storytelling,Interactive Storytelling,1 - 7
+Artificial Intelligence & Data Science,Data Visualization and Storytelling,Dashboard Development,1 - 7
+Artificial Intelligence & Data Science,AI Strategy and Business Value Realization,AI Use Case Identification,1 - 7
+Artificial Intelligence & Data Science,AI Strategy and Business Value Realization,AI ROI Quantification,1 - 7
+Artificial Intelligence & Data Science,AI Strategy and Business Value Realization,AI Governance and Risk Management,1 - 7
+Artificial Intelligence & Data Science,"AI Ethics, Privacy, and Governance",Ethical AI Design,1 - 7
+Artificial Intelligence & Data Science,"AI Ethics, Privacy, and Governance",Privacy Preservation in AI,1 - 7
+Artificial Intelligence & Data Science,"AI Ethics, Privacy, and Governance",AI Governance Frameworks,1 - 7
+Artificial Intelligence & Data Science,Data Preparation and Management,Data Cleaning,1 - 7
+Artificial Intelligence & Data Science,Data Preparation and Management,Data Integration,1 - 7
+Artificial Intelligence & Data Science,Data Preparation and Management,Feature Engineering,1 - 7
+Artificial Intelligence & Data Science,"Model Evaluation, Validation, and Explainability",Performance Metrics Calculation,1 - 7
+Artificial Intelligence & Data Science,"Model Evaluation, Validation, and Explainability",Validation Techniques,1 - 7
+Artificial Intelligence & Data Science,"Model Evaluation, Validation, and Explainability",Explainability and Interpretability,1 - 7
+Artificial Intelligence & Data Science,Speech and Multimodal AI,Speech Recognition,1 - 7
+Artificial Intelligence & Data Science,Speech and Multimodal AI,Multimodal Sentiment Analysis,1 - 7
+Artificial Intelligence & Data Science,Speech and Multimodal AI,Speech Synthesis,1 - 7
+Artificial Intelligence & Data Science,Speech and Multimodal AI,Cross-Modal Learning,1 - 7
+Artificial Intelligence & Data Science,Model Optimization and Scalability,Hyperparameter Tuning,1 - 7
+Artificial Intelligence & Data Science,Model Optimization and Scalability,Model Compression,1 - 7
+Artificial Intelligence & Data Science,Model Optimization and Scalability,Distributed Training,1 - 7
+Artificial Intelligence & Data Science,Model Deployment and Operations,Model Monitoring,1 - 7
+Artificial Intelligence & Data Science,Model Deployment and Operations,Model Retraining,1 - 7
+Artificial Intelligence & Data Science,Model Deployment and Operations,Model Packaging,1 - 7
+Artificial Intelligence & Data Science,Programming for AI & Data Science,Algorithm Implementation,1 - 7
+Artificial Intelligence & Data Science,Programming for AI & Data Science,Data Manipulation,1 - 7
+Artificial Intelligence & Data Science,Programming for AI & Data Science,Model Deployment,1 - 7
+Artificial Intelligence & Data Science,Foundation Models and Generative AI,Model Evaluation and Interpretability,1 - 7
+Artificial Intelligence & Data Science,Foundation Models and Generative AI,Fine-tuning Models,1 - 7
+Artificial Intelligence & Data Science,Foundation Models and Generative AI,Model Pretraining,1 - 7
+Artificial Intelligence & Data Science,Deep Learning Models and Architectures,Training and Optimization of Deep Learning Models,1 - 7
+Artificial Intelligence & Data Science,Deep Learning Models and Architectures,Designing Neural Network Architectures,1 - 7
+Artificial Intelligence & Data Science,Deep Learning Models and Architectures,Deploying Deep Learning Models,1 - 7
+Artificial Intelligence & Data Science,Reinforcement Learning,Reward Engineering,1 - 7
+Artificial Intelligence & Data Science,Reinforcement Learning,Environment Modeling,1 - 7
+Artificial Intelligence & Data Science,Reinforcement Learning,Policy Design,1 - 7
+Artificial Intelligence & Data Science,Mathematical and Statistical Foundations,Probability and Statistics for AI,1 - 7
+Artificial Intelligence & Data Science,Mathematical and Statistical Foundations,Linear Algebra for AI,1 - 7
+Artificial Intelligence & Data Science,Mathematical and Statistical Foundations,Optimization Techniques,1 - 7
+Data Engineering,Big Data Analytics,Data Analysis,1 - 7
+Data Engineering,Big Data Analytics,Data Ingestion,1 - 7
+Data Engineering,Big Data Analytics,Data Transformation,1 - 7
+Data Engineering,Data Integration and Ingestion,Data Quality and Validation,1 - 7
+Data Engineering,Data Integration and Ingestion,ETL Pipeline Development,1 - 7
+Data Engineering,Data Integration and Ingestion,Real-Time Data Streaming,1 - 7
+Data Engineering,Data Modeling and Design,Conceptual Data Modeling,1 - 7
+Data Engineering,Data Modeling and Design,Logical Data Modeling,1 - 7
+Data Engineering,Data Modeling and Design,Physical Data Modeling,1 - 7
+Data Engineering,Data Pipeline Design and Development,ETL/ELT Workflow Development,1 - 7
+Data Engineering,Data Quality and Governance,Data Lineage,1 - 7
+Data Engineering,Data Quality and Governance,Data Validation,1 - 7
+Data Engineering,Data Quality and Governance,Metadata Management,1 - 7
+Data Engineering,Data Security and Privacy Implementation,Encryption Protocols,1 - 7
+Data Engineering,Data Security and Privacy Implementation,Privacy-Preserving Techniques,1 - 7
+Data Engineering,Data Security and Privacy Implementation,Secure Data Pipelines,1 - 7
+Data Engineering,Data Storage and Retrieval Systems Architecture,Data Retrieval Optimization,1 - 7
+Data Engineering,Data Storage and Retrieval Systems Architecture,Database Design and Optimization,1 - 7
+Data Engineering,Data Storage and Retrieval Systems Architecture,Distributed Storage Systems,1 - 7
+Data Engineering,Database Management,Database Administration,1 - 7
+Data Engineering,Database Management,Database Design,1 - 7
+Data Engineering,Metadata Management and Data Cataloging,Automated Metadata Extraction,1 - 7
+Data Engineering,Metadata Management and Data Cataloging,Data Lineage Tracking,1 - 7
+Data Engineering,Metadata Management and Data Cataloging,Metadata Standards Implementation,1 - 7
+Data Engineering,Performance Optimization and Scalability,Database Scalability,1 - 7
+Data Engineering,Performance Optimization and Scalability,Query Optimization,1 - 7
+Data Engineering,Real-time and Batch Data Processing,Data Ingestion,1 - 7
+Data Engineering,Real-time and Batch Data Processing,Data Orchestration,1 - 7
+Data Engineering,Real-time and Batch Data Processing,Data Transformation,1 - 7
+Data Engineering,Tooling and Automation for Data Engineering,CI/CD for Data Engineering,1 - 7
+Data Engineering,Tooling and Automation for Data Engineering,Data Pipeline Orchestration,1 - 7
+Data Engineering,Tooling and Automation for Data Engineering,Infrastructure as Code (IaC) for Data Systems,1 - 7
+CyberSecurity,Application & Software Security,Application Development Standards,1 - 7
+CyberSecurity,Application & Software Security,Change Control & File Integrity Monitoring,1 - 7
+CyberSecurity,Application & Software Security,Code Review,1 - 7
+CyberSecurity,Application & Software Security,Inventory Open Source Components,1 - 7
+CyberSecurity,Application & Software Security,SBOM (Software Bill of Materials),1 - 7
+CyberSecurity,Application & Software Security,SCA (Software Composition Analysis),1 - 7
+CyberSecurity,Application & Software Security,Secure API & Microservices Development        ,1 - 7
+CyberSecurity,Application & Software Security,Secure Code Training & Review,1 - 7
+CyberSecurity,Application & Software Security,Secure Coding Practices,1 - 7
+CyberSecurity,Application & Software Security,Secure DevOps & SDLC	,1 - 7
+CyberSecurity,Application & Software Security,Software Supply Chain Security	,1 - 7
+CyberSecurity,Application & Software Security,Web Application Firewall,1 - 7
+CyberSecurity,Cybersecurity Leadership & Strategy,Incident Response Leadership,1 - 7
+CyberSecurity,Cybersecurity Leadership & Strategy,Regulatory Compliance & Ethics,1 - 7
+CyberSecurity,Cybersecurity Leadership & Strategy,Risk Management & Governance,1 - 7
+CyberSecurity,Cybersecurity Leadership & Strategy,Strategic Cybersecurity Planning,1 - 7
+CyberSecurity,Cybersecurity Leadership & Strategy,Strategic roadmap planning,1 - 7
+CyberSecurity,Data Security & Cryptography,Data Classification & Protection	,1 - 7
+CyberSecurity,Data Security & Cryptography,Data Loss Prevention & Secure Storage	,1 - 7
+CyberSecurity,Data Security & Cryptography,Data Retention & Disposal	,1 - 7
+CyberSecurity,Data Security & Cryptography,Encryption Algorithms,1 - 7
+CyberSecurity,Data Security & Cryptography,Secure Key Management,1 - 7
+CyberSecurity,Digital Forensics,Cloud forensics,1 - 7
+CyberSecurity,Digital Forensics,Defining forensic KPIs & metrics,1 - 7
+CyberSecurity,Digital Forensics,Developing forensic capability roadmaps,1 - 7
+CyberSecurity,Digital Forensics,Evidence Collection,1 - 7
+CyberSecurity,Digital Forensics,Forensic Reporting & Legal Considerations,1 - 7
+CyberSecurity,Digital Forensics,Intrusion Analysis & Diamond Model,1 - 7
+CyberSecurity,Digital Forensics,Malware Analysis – Dynamic,1 - 7
+CyberSecurity,Digital Forensics,Malware Analysis – Static,1 - 7
+CyberSecurity,Digital Forensics,Memory & Live System Forensics,1 - 7
+CyberSecurity,Digital Forensics,Mobile forensics,1 - 7
+CyberSecurity,Governance & Risk Management,ISO 27001,1 - 7
+CyberSecurity,Governance & Risk Management,NIST RMF,1 - 7
+CyberSecurity,Governance & Risk Management,Supply Chain Incident Management,1 - 7
+CyberSecurity,Governance and Risk Management,Policy Development,1 - 7
+CyberSecurity,Governance and Risk Management,Risk Assessment,1 - 7
+CyberSecurity,Governance and Risk Management,Security awareness and training	,1 - 7
+CyberSecurity,Governance and Risk Management,Security metrics and reporting,1 - 7
+CyberSecurity,Identity & Access Management,Access Review & Audit,1 - 7
+CyberSecurity,Identity & Access Management,Role Engineering,1 - 7
+CyberSecurity,Identity & Access Management (IAM),Authentication & Authorisation Mechanisms	,1 - 7
+CyberSecurity,Identity & Access Management (IAM),Identity Governance & Lifecycle	,1 - 7
+CyberSecurity,Identity & Access Management (IAM),Privileged Access Management (PAM),1 - 7
+CyberSecurity,Identity & Access Management (IAM),Zero Trust & Conditional Access	,1 - 7
+CyberSecurity,Network & Infrastructure Security,Desktop Security,1 - 7
+CyberSecurity,Network & Infrastructure Security,DNS Security/Filtering,1 - 7
+CyberSecurity,Network & Infrastructure Security,Firewall Configuration and Management,1 - 7
+CyberSecurity,Network & Infrastructure Security,Full Packet Inspection,1 - 7
+CyberSecurity,Network & Infrastructure Security,Intrusion Detection and Prevention Systems (IDPS),1 - 7
+CyberSecurity,Network & Infrastructure Security,Network IPS & IDS,1 - 7
+CyberSecurity,Network & Infrastructure Security,Network monitoring and anomaly detection,1 - 7
+CyberSecurity,Network & Infrastructure Security,Network segmentation and secure topology	,1 - 7
+CyberSecurity,Network & Infrastructure Security,Perimeter and network device security	,1 - 7
+CyberSecurity,Network & Infrastructure Security,Proxy/Content Filtering,1 - 7
+CyberSecurity,Network & Infrastructure Security,Secure protocols and encryption practices	,1 - 7
+CyberSecurity,Network & Infrastructure Security,SIEM/EDR exposure,1 - 7
+CyberSecurity,Network & Infrastructure Security,Wireless and remote access security	,1 - 7
+CyberSecurity,Privacy & Data Governance,Anonymization & Pseudonymization,1 - 7
+CyberSecurity,Privacy & Data Governance,Data Classification and Labeling,1 - 7
+CyberSecurity,Privacy & Data Governance,Data Privacy Impact Assessments (DPIA),1 - 7
+CyberSecurity,Privacy & Data Governance,Data Subject Rights Handling,1 - 7
+CyberSecurity,Privacy & Data Governance,DPO Responsibilities,1 - 7
+CyberSecurity,Privacy & Data Governance,Privacy Engineering,1 - 7
+CyberSecurity,Security Architecture & Design,Hardening Guidelines,1 - 7
+CyberSecurity,Security Architecture & Design,Integration to SDLC & Project Delivery,1 - 7
+CyberSecurity,Security Architecture & Design,Model-Based Systems Engineering (MBSE),1 - 7
+CyberSecurity,Security Architecture & Design,Secure Configuration & Hardening	,1 - 7
+CyberSecurity,Security Architecture & Design,Secure System Design & Architecture	,1 - 7
+CyberSecurity,Security Architecture & Design,"Security Requirements & Threat Modelling (STRIDE, PASTA or others)        ",1 - 7
+CyberSecurity,Security Architecture & Design,"Threat-Modeling Tools (STRIDE, DFDs)",1 - 7
+CyberSecurity,Security Architecture & Design,Zero Trust & Security Control Integration	,1 - 7
+CyberSecurity,Security Assessment & Testing,"Compliance Testing (PCI-DSS, ISO)",1 - 7
+CyberSecurity,Security Assessment & Testing,Detect Misconfigurations,1 - 7
+CyberSecurity,Security Assessment & Testing,Penetration Testing,1 - 7
+CyberSecurity,Security Assessment & Testing,Public Software Repositories Management,1 - 7
+CyberSecurity,Security Assessment & Testing,Red Team/Blue Team Exercises,1 - 7
+CyberSecurity,Security Assessment & Testing,Security Audit,1 - 7
+CyberSecurity,Security Assessment & Testing,Vulnerability Management,1 - 7
+CyberSecurity,Security Operations & Incident Response,Automation & SOAR,1 - 7
+CyberSecurity,Security Operations & Incident Response,Backup Management & Testing,1 - 7
+CyberSecurity,Security Operations & Incident Response,Business Continuity & Disaster Recovery	,1 - 7
+CyberSecurity,Security Operations & Incident Response,Business Continuity Planning,1 - 7
+CyberSecurity,Security Operations & Incident Response,Deception Technologies for Breach Detection,1 - 7
+CyberSecurity,Security Operations & Incident Response,Gap Assessment,1 - 7
+CyberSecurity,Security Operations & Incident Response,Incident Analysis,1 - 7
+CyberSecurity,Security Operations & Incident Response,Incident Response Coordination,1 - 7
+CyberSecurity,Security Operations & Incident Response,Law Enforcement Relationship Management,1 - 7
+CyberSecurity,Security Operations & Incident Response,MITRE D3FEND,1 - 7
+CyberSecurity,Security Operations & Incident Response,MSSP Integration,1 - 7
+CyberSecurity,Security Operations & Incident Response,NetFlow Analysis,1 - 7
+CyberSecurity,Security Operations & Incident Response,Playbook Development,1 - 7
+CyberSecurity,Security Operations & Incident Response,Post-Incident Analysis,1 - 7
+CyberSecurity,Security Operations & Incident Response,Ransomware BIA,1 - 7
+CyberSecurity,Security Operations & Incident Response,Security Automation & Orchestration	,1 - 7
+CyberSecurity,Security Operations & Incident Response,Security Health Checks,1 - 7
+CyberSecurity,Security Operations & Incident Response,Security Monitoring & Event Management	,1 - 7
+CyberSecurity,Security Operations & Incident Response,Shift Management,1 - 7
+CyberSecurity,Security Operations & Incident Response,SOC DR Exercise,1 - 7
+CyberSecurity,Security Operations & Incident Response,SOC Resource Management,1 - 7
+CyberSecurity,Security Operations & Incident Response,SOC Tech Stack Management,1 - 7
+CyberSecurity,Security Operations & Incident Response,Threat Detection,1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,Active Defense & Deception	,1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,Adversary Emulation,1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,Adversary Emulation & Purple Teaming	,1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,Dark web intelligence	,1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,Dark-Web intelligence,1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,"Intelligence platforms (e.g., MISP)	",1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,Long-term Trend Analysis,1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,Malware classification (YARA)	,1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,MISP platform,1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,Partnerships with ISACs,1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,Sandbox analysis	,1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,STIX/TAXII standards,1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,Threat Hunting,1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,Threat Hunting & Detection Engineering	,1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,"Threat intel standards (e.g., STIX/TAXII)	",1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,Threat Intelligence Analysis,1 - 7
+CyberSecurity,Threat Intelligence & Adversary Emulation,YARA malware classification,1 - 7

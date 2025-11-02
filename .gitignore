@@ -1,0 +1,9 @@
+venv/
+.env
+Fundamentals/__pycache__/
+Fundamentals_level_2/__pycache__/
+*.pyc
+.DS_Store
+.idea/
+.vscode/
+*.log
