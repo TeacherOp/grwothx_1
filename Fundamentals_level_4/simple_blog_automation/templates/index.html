@@ -1,0 +1,636 @@
+{% extends "base.html" %}
+
+{% block title %}AI SEO Blog Generator - Create Amazing Content{% endblock %}
+
+{% block styles %}
+<style>
+    .input-section {
+        margin-bottom: 30px;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+    }
+
+    .input-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #000;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #d0d0d0;
+        font-size: 14px;
+        transition: border-color 0.3s;
+        background: #fff;
+    }
+
+    .input-group input:focus {
+        outline: none;
+        border-color: #000;
+    }
+
+    .input-group .hint {
+        margin-top: 5px;
+        font-size: 12px;
+        color: #666;
+    }
+
+    .button-group {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .progress-section {
+        display: none;
+        margin-top: 30px;
+    }
+
+    .progress-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .spinner {
+        width: 24px;
+        height: 24px;
+        border: 2px solid #e0e0e0;
+        border-top: 2px solid #000;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin-right: 10px;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .progress-status {
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .log-container {
+        background: #f9f9f9;
+        border: 1px solid #e0e0e0;
+        padding: 20px;
+        max-height: 400px;
+        overflow-y: auto;
+        font-family: 'Courier New', monospace;
+        font-size: 13px;
+    }
+
+    .log-entry {
+        margin-bottom: 10px;
+        padding: 8px;
+        background: #fff;
+        border-left: 3px solid #000;
+    }
+
+    .log-entry.error {
+        border-left-color: #000;
+        background: #f5f5f5;
+    }
+
+    .log-entry.success {
+        border-left-color: #000;
+        background: #fff;
+        font-weight: 500;
+    }
+
+    .log-entry.tool {
+        border-left-color: #666;
+        background: #fafafa;
+    }
+
+    .log-timestamp {
+        color: #999;
+        font-size: 11px;
+        margin-right: 10px;
+    }
+
+    .result-section {
+        display: none;
+        margin-top: 30px;
+        padding: 20px;
+        background: #fff;
+        border: 2px solid #000;
+    }
+
+    .result-section h3 {
+        color: #000;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .result-link {
+        display: inline-block;
+        margin-top: 10px;
+        color: #000;
+        text-decoration: none;
+        font-weight: 500;
+        border-bottom: 1px solid #000;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .status-indicator {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-left: 10px;
+        background: #000;
+    }
+
+    .status-indicator.active {
+        animation: blink 1.5s infinite;
+    }
+
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+    }
+
+    .brand-context-section {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #fff;
+        border: 1px solid #e0e0e0;
+    }
+
+    .brand-context-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+    .brand-context-header h3 {
+        color: #000;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+
+    .toggle-icon {
+        transition: transform 0.3s;
+        margin-left: 10px;
+    }
+
+    .toggle-icon.collapsed {
+        transform: rotate(-90deg);
+    }
+
+    .brand-context-content {
+        display: none;
+    }
+
+    .brand-context-content.show {
+        display: block;
+    }
+
+    .brand-context-textarea {
+        width: 100%;
+        min-height: 300px;
+        padding: 12px;
+        border: 1px solid #d0d0d0;
+        font-family: 'Courier New', monospace;
+        font-size: 13px;
+        resize: vertical;
+        background: #fff;
+    }
+
+    .brand-context-textarea:focus {
+        outline: none;
+        border-color: #000;
+    }
+
+    .brand-context-actions {
+        margin-top: 15px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .btn-save {
+        background: #000;
+        border: 1px solid #000;
+    }
+
+    .btn-save:hover {
+        background: #fff;
+        color: #000;
+    }
+
+    .btn-cancel {
+        background: #fff;
+        color: #000;
+        border: 1px solid #000;
+    }
+
+    .btn-cancel:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    .save-status {
+        margin-left: 15px;
+        color: #000;
+        font-weight: 500;
+        display: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Brand Context Editor Section -->
+<div class="brand-context-section">
+    <div class="brand-context-header" onclick="toggleBrandContext()">
+        <h3>
+            BRAND CONTEXT
+            <span class="toggle-icon collapsed" id="brandToggleIcon">▼</span>
+        </h3>
+        <small style="color: #666; font-size: 11px;">CLICK TO VIEW/EDIT</small>
+    </div>
+    <div class="brand-context-content" id="brandContextContent">
+        <textarea id="brandContextTextarea" class="brand-context-textarea"
+                  placeholder="Enter your brand context information here..."></textarea>
+        <div class="brand-context-actions">
+            <button class="btn btn-save" onclick="saveBrandContext()">SAVE</button>
+            <button class="btn btn-cancel" onclick="cancelBrandEdit()">CANCEL</button>
+            <span class="save-status" id="saveStatus">SAVED</span>
+        </div>
+    </div>
+</div>
+
+<!-- Blog Generation Section -->
+<div class="input-section">
+    <div class="input-group">
+        <label for="topic">BLOG TOPIC (OPTIONAL)</label>
+        <input type="text" id="topic" placeholder="e.g., How to use Reddit for market research">
+        <div class="hint">Leave empty to auto-generate a topic based on trends and existing content</div>
+    </div>
+
+    <div class="button-group">
+        <button id="generateBtn" class="btn" onclick="generateBlog()">
+            GENERATE
+        </button>
+        <button id="resetBtn" class="btn btn-cancel" onclick="resetForm()">
+            RESET
+        </button>
+    </div>
+</div>
+
+<div class="progress-section" id="progressSection">
+    <div class="progress-header">
+        <div class="spinner" id="spinner"></div>
+        <div class="progress-status" id="progressStatus">
+            Initializing...
+            <span class="status-indicator active"></span>
+        </div>
+    </div>
+
+    <div class="log-container" id="logContainer">
+        <!-- Logs will be added here dynamically -->
+    </div>
+</div>
+
+<div class="result-section" id="resultSection">
+    <h3>BLOG GENERATED SUCCESSFULLY</h3>
+    <p id="resultMessage"></p>
+    <a href="#" target="_blank" id="resultLink" class="result-link">VIEW PUBLISHED BLOG</a>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+let eventSource = null;
+
+function addLog(message, type = 'info') {
+    const logContainer = document.getElementById('logContainer');
+    const timestamp = new Date().toLocaleTimeString();
+
+    const logEntry = document.createElement('div');
+    logEntry.className = `log-entry ${type}`;
+
+    // Format message with text prefix
+    let prefix = '';
+    if (type === 'tool') prefix = '[TOOL]';
+    else if (type === 'success') prefix = '[SUCCESS]';
+    else if (type === 'error') prefix = '[ERROR]';
+    else if (type === 'start') prefix = '[START]';
+    else prefix = '[INFO]';
+
+    logEntry.innerHTML = `
+        <span class="log-timestamp">${timestamp}</span>
+        ${prefix} ${message}
+    `;
+
+    logContainer.appendChild(logEntry);
+    logContainer.scrollTop = logContainer.scrollHeight;
+}
+
+function updateStatus(status) {
+    document.getElementById('progressStatus').innerHTML = status + '<span class="status-indicator active"></span>';
+}
+
+function handleSSEMessage(data) {
+    // Process SSE message based on event type
+    switch(data.event) {
+            case 'start':
+                updateStatus('Starting blog generation...');
+                addLog(data.data.message, 'info');
+                break;
+
+            case 'topic':
+                if (data.data.auto_generated) {
+                    updateStatus('Auto-generating topic...');
+                    addLog('AI is selecting a unique topic based on trends');
+                } else {
+                    updateStatus('Processing topic...');
+                    addLog(`Topic confirmed: ${data.data.topic}`);
+                }
+                break;
+
+            case 'thinking':
+                updateStatus('AI is thinking...');
+                addLog('AI is processing and creating content...');
+                break;
+
+            case 'tool_use':
+                updateStatus(`Using tool: ${data.data.tool}`);
+                let toolMessage = `Using tool: ${data.data.tool}`;
+
+                // Add specific details for each tool
+                if (data.data.tool === 'image_generator') {
+                    toolMessage += ' - Generating header image...';
+                } else if (data.data.tool === 'image_uploader') {
+                    toolMessage += ' - Uploading image to cloud...';
+                } else if (data.data.tool === 'blog_creator') {
+                    toolMessage += ' - Creating blog post...';
+                } else if (data.data.tool === 'blog_inserter') {
+                    toolMessage += ' - Publishing to database...';
+                } else if (data.data.tool === 'web_search_20250305') {
+                    toolMessage += ' - Researching current data...';
+                }
+
+                addLog(toolMessage, 'tool');
+                break;
+
+            case 'message':
+                addLog(`AI: ${data.data.text}`, 'info');
+                break;
+
+            case 'complete':
+                updateStatus('Blog generated successfully!');
+                addLog('Blog successfully created and published!', 'success');
+
+                // Show result section
+                document.getElementById('resultSection').style.display = 'block';
+
+                // Update result details
+                if (data.data.blog_url) {
+                    document.getElementById('resultMessage').textContent =
+                        `Your blog has been published successfully!`;
+                    document.getElementById('resultLink').href = data.data.blog_url;
+                    document.getElementById('resultLink').style.display = 'inline-block';
+                    addLog(`Blog URL: ${data.data.blog_url}`, 'success');
+                } else {
+                    document.getElementById('resultMessage').textContent =
+                        'Blog has been created and saved locally.';
+                    document.getElementById('resultLink').style.display = 'none';
+                }
+
+                // Hide spinner
+                document.getElementById('spinner').style.display = 'none';
+                document.getElementById('generateBtn').disabled = false;
+                break;
+
+            case 'error':
+                updateStatus('Error occurred');
+                addLog(`Error: ${data.data.message}`, 'error');
+                document.getElementById('spinner').style.display = 'none';
+                document.getElementById('generateBtn').disabled = false;
+                break;
+        }
+}
+
+function generateBlog() {
+    const topic = document.getElementById('topic').value.trim();
+    const generateBtn = document.getElementById('generateBtn');
+
+    // Disable button and show progress
+    generateBtn.disabled = true;
+    document.getElementById('progressSection').style.display = 'block';
+    document.getElementById('resultSection').style.display = 'none';
+    document.getElementById('logContainer').innerHTML = '';
+
+    // Initial log
+    if (topic) {
+        addLog(`Starting blog generation for: "${topic}"`, 'start');
+    } else {
+        addLog('Auto-generating topic based on trends and existing content...', 'start');
+    }
+
+    updateStatus('Connecting to AI...');
+
+    // Send POST request and handle SSE response
+    fetch('/api/generate', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ topic: topic })
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        // Read the response as a stream for SSE
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
+
+        function processSSE() {
+            reader.read().then(({ done, value }) => {
+                if (done) {
+                    console.log('Stream complete');
+                    generateBtn.disabled = false;
+                    return;
+                }
+
+                // Decode the chunk and add to buffer
+                buffer += decoder.decode(value, { stream: true });
+
+                // Process complete SSE messages
+                const lines = buffer.split('\n');
+                buffer = lines.pop(); // Keep incomplete line in buffer
+
+                for (let i = 0; i < lines.length; i++) {
+                    const line = lines[i].trim();
+
+                    if (line.startsWith('data: ')) {
+                        try {
+                            const data = JSON.parse(line.substring(6));
+                            handleSSEMessage(data);
+                        } catch (e) {
+                            console.error('Error parsing SSE message:', e, line);
+                        }
+                    }
+                }
+
+                // Continue reading
+                processSSE();
+            }).catch(error => {
+                console.error('Stream reading error:', error);
+                addLog('Connection error: ' + error.message, 'error');
+                generateBtn.disabled = false;
+            });
+        }
+
+        processSSE();
+    })
+    .catch(error => {
+        console.error('Error starting generation:', error);
+        addLog('Failed to start blog generation: ' + error.message, 'error');
+        generateBtn.disabled = false;
+        document.getElementById('spinner').style.display = 'none';
+    });
+}
+
+function resetForm() {
+    document.getElementById('topic').value = '';
+    document.getElementById('progressSection').style.display = 'none';
+    document.getElementById('resultSection').style.display = 'none';
+    document.getElementById('generateBtn').disabled = false;
+}
+
+// Brand Context Management Functions
+let originalBrandContext = '';
+
+function toggleBrandContext() {
+    const content = document.getElementById('brandContextContent');
+    const icon = document.getElementById('brandToggleIcon');
+
+    if (content.classList.contains('show')) {
+        content.classList.remove('show');
+        icon.classList.add('collapsed');
+    } else {
+        content.classList.add('show');
+        icon.classList.remove('collapsed');
+        // Load brand context if not already loaded
+        if (!document.getElementById('brandContextTextarea').value) {
+            loadBrandContext();
+        }
+    }
+}
+
+function loadBrandContext() {
+    fetch('/api/brand-context')
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'success') {
+                originalBrandContext = data.content;
+                document.getElementById('brandContextTextarea').value = data.content;
+                console.log('Brand context loaded from:', data.file_path);
+            }
+        })
+        .catch(error => {
+            console.error('Failed to load brand context:', error);
+            addLog('Failed to load brand context', 'error');
+        });
+}
+
+function saveBrandContext() {
+    const textarea = document.getElementById('brandContextTextarea');
+    const newContent = textarea.value;
+
+    fetch('/api/brand-context', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ content: newContent })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            originalBrandContext = newContent;
+            // Show success message
+            const statusElement = document.getElementById('saveStatus');
+            statusElement.style.display = 'inline';
+            setTimeout(() => {
+                statusElement.style.display = 'none';
+            }, 3000);
+            console.log('Brand context saved successfully');
+        } else {
+            throw new Error(data.error || 'Failed to save');
+        }
+    })
+    .catch(error => {
+        console.error('Failed to save brand context:', error);
+        alert('Failed to save brand context: ' + error.message);
+    });
+}
+
+function cancelBrandEdit() {
+    document.getElementById('brandContextTextarea').value = originalBrandContext;
+    // Optionally close the section
+    const content = document.getElementById('brandContextContent');
+    const icon = document.getElementById('brandToggleIcon');
+    content.classList.remove('show');
+    icon.classList.add('collapsed');
+}
+
+// Check status on page load
+window.addEventListener('load', function() {
+    fetch('/api/status')
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'ok') {
+                console.log('Configuration status:', data.config);
+
+                // Show warnings if configuration is incomplete
+                if (!data.config.gemini) {
+                    console.warn('Image generation not available - GEMINI_API_KEY not configured');
+                }
+                if (!data.config.supabase) {
+                    console.warn('Database publishing not available - Supabase not configured');
+                }
+
+                // Load brand context on page load if section is expanded
+                if (document.getElementById('brandContextContent').classList.contains('show')) {
+                    loadBrandContext();
+                }
+            }
+        })
+        .catch(error => {
+            console.error('Failed to check status:', error);
+        });
+});
+</script>
+{% endblock %}

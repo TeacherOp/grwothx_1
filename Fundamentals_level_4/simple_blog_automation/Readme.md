@@ -1,1 +1,1 @@
-# To be addeed soon - in next gitush
+# Simple Blog Automation

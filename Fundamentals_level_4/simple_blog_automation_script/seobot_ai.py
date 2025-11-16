@@ -636,7 +636,7 @@ def main():
 2. Think of a NEW, unique blog idea that would be valuable for our audience"""
         topic_context = ""
     
-    user_message = f"""You are an SEO expert for ReplyDaddy.com. Here's your task:
+    user_message = f"""You are an SEO expert. Here's your task:
 
 BRAND CONTEXT:
 {brand_context}
@@ -663,14 +663,6 @@ YOUR MISSION:
    - SOURCES: List all source URLs at the end in a <h2>References</h2> section
 6. IMPORTANT: After creating the blog with blog_creator, you MUST use blog_inserter with the returned file_path to add it to our database
 
-Focus on topics like:
-- Reddit marketing strategies
-- AI-powered engagement techniques
-- Community building on Reddit
-- Content optimization for Reddit
-- Case studies and success stories
-- Tools and automation for Reddit marketing
-- Reddit SEO and visibility tactics
 
 Be creative and provide genuine value to readers!
 

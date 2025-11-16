@@ -1,0 +1,83 @@
+🚀 AI-Powered Reddit Marketing Platform for Authentic Brand Growth
+
+ReplyDaddy helps businesses discover and engage with Reddit opportunities using AI-powered content analysis while maintaining authentic, human-controlled interactions.
+
+✨ What Makes ReplyDaddy Different
+────────────────────────────────────────
+• 🔍 Smart Discovery: AI continuously scans Reddit to find relevant conversations about your brand, competitors, and industry problems
+• 💬 AI-Assisted Content: Generate thoughtful, context-aware responses that add genuine value to discussions
+• 🎯 Multi-Factor Scoring: Advanced algorithm evaluates relevance, urgency, competition, authority, and engagement
+• 👤 Human-in-the-Loop: You review and post all content manually - we're your AI assistant, not an automation bot
+• 📊 Subreddit Intelligence: Analyze community health, rules, and engagement patterns before participating
+
+🌟 Long-Term SEO & AI Benefits
+────────────────────────────────────────
+• 🔍 Google SEO Power: Reddit posts rank highly in Google search results, creating lasting organic traffic
+• 🤖 AI Citation Source: Major AI chatbots (ChatGPT, Claude, Gemini) frequently cite Reddit content in responses
+• 📈 Compound Growth: Your helpful Reddit contributions become permanent brand assets that drive traffic for years
+• 🎯 Intent-Rich Keywords: Reddit discussions capture high-intent, long-tail keywords naturally
+• 🔗 Authoritative Backlinks: Reddit's high domain authority (DA 96) provides powerful SEO value
+
+🚀 Core Features
+────────────────────────────────────────
+• ⚡ Real-Time Monitoring: Track keywords and subreddits with sophisticated rate limiting
+• 🎨 Post Generation: Create authentic Reddit posts with AI-powered subreddit context analysis
+• 💡 Custom Prompts: Define your brand voice and response style with template management
+• 📊 Usage Tracking: Monitor daily limits for scans, responses, and posts based on your plan
+• 🏢 Multi-Project Support: Manage multiple brands or clients from one dashboard
+• 🔐 Secure Authentication: Supabase-powered auth with JWT token verification
+• 💳 Flexible Billing: Dodo Payments integration with subscription management
+
+🛠️ How It Works
+────────────────────────────────────────
+1. Setup Your Brand: AI analyzes your website to understand your product and value proposition
+2. Configure Discovery: Add subreddits and keywords to monitor for opportunities
+3. AI Finds Opportunities: System scans Reddit and scores posts based on relevance and engagement potential
+4. Review & Engage: Dashboard presents high-value opportunities with AI-generated response suggestions
+5. Track Performance: Monitor your Reddit engagement and ROI metrics
+
+💼 Perfect For
+────────────────────────────────────────
+• 🏢 SaaS Companies: Discover feature requests and support questions in real-time
+• 🚀 Startups: Build authentic community presence and acquire early customers
+• 🏆 Marketing Agencies: Manage multiple client Reddit strategies efficiently
+• 💡 Content Creators: Find trending topics and engage with your audience
+• 🛍️ E-commerce Brands: Participate in product discussions and recommendations
+
+📊 Platform Capabilities
+────────────────────────────────────────
+• Daily scan limits with intelligent rate limiting
+• Bulk subreddit and keyword management
+• AI response generation with usage tracking
+• Project-based organization with team collaboration
+• Custom response prompts for brand consistency
+• Comprehensive onboarding flow with prerequisites checking
+
+🔒 Built with Best Practices
+────────────────────────────────────────
+• Reddit API compliance with PRAW integration
+• Anthropic Claude AI (Sonnet 4) for content generation
+• PostgreSQL database with Row Level Security
+• React 19 + TypeScript frontend
+• Flask + Python backend with JWT authentication
+• Docker containerization for easy deployment
+
+💳 Transparent Pricing
+────────────────────────────────────────
+• 📦 Starter Plan: Limited scans and responses for testing
+• 🚀 Growth Plans: Increased limits for scaling businesses
+• 🏢 Enterprise: Custom limits and dedicated support
+• ✅ All plans include core features and AI assistance
+
+🎯 Why Reddit Marketing Matters
+────────────────────────────────────────
+Reddit's 500M+ monthly users actively seek recommendations, solutions, and authentic discussions. Unlike traditional social media, Reddit content:
+• Lives forever and improves with age (SEO value)
+• Gets cited by AI assistants reaching millions
+• Captures users at high-intent moments
+• Builds genuine community trust and authority
+
+🚀 Start Building Your Reddit Presence Today
+Visit: https://replydaddy.com
+
+Transform Reddit from a marketing mystery into your most valuable growth channel with AI-powered discovery and authentic human engagement.
