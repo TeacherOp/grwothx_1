@@ -1,3 +1,59 @@
+############################
+# Environment & secrets
+############################
+.env
+.env.*
+.env.local
+.env.*.local
+
+############################
+# Python
+############################
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+.python-version
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Test / tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+############################
+# Logs
+############################
+*.log
+
+############################
+# OS / Editors
+############################
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+############################
+# Project specific
+############################
+.claude
+CLAUDE.md
+Fundamentals_level_4/simple_presentation_builder/input_output_data/old_samples
+# Step outputs and generated artifacts
+Fundamentals_level_1/*.txt
+*_output_data/
 venv/
 .env
 *.pyc
